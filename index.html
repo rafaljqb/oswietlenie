@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Arduino Remote Control</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+      <!-- <link href="css/cover.css" rel="stylesheet">-->
+
+        <script src="js/socket.io/socket.io.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="">Arduino Remote Control</h3>
+                            </div>
+                    </div>
+
+                    <div class="inner cover">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3"></div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="thumbnail">
+                                    <img id="light_image" src="img/off.png">
+                                    <div class="caption">
+                                        <p>
+                                            <a href="#" onclick="window.open('http://us01.proxy.teleduino.org/api/1.0/328.php?k=9F748DF143C350E8688206AAE9673941&r=setDigitalOutput&pin=7&output=1', 'Nowe_okno', 'height=150,width=200');" id="button_on"  class="btn btn-primary" role="button">ON</a>
+                                            <a href="#" onclick="window.open('http://us01.proxy.teleduino.org/api/1.0/328.php?k=9F748DF143C350E8688206AAE9673941&r=definePinMode&pin=7&mode=1', 'Nowe_okno', 'height=150,width=200');">Start</a>
+                                            <a href="#" onclick="window.open('http://us01.proxy.teleduino.org/api/1.0/328.php?k=9F748DF143C350E8688206AAE9673941&r=setDigitalOutput&pin=7&output=0', 'Nowe_okno', 'height=150,width=200');" id="button_off"  class="btn btn-default" role="button">OFF</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <p>Created by Rafaell </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/arduino.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    </body>
+</html>
